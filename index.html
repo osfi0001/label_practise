@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Practise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="card">
+      <div>
+        <label for="firstName">Please enter your full name:</label>
+        <input type="text" id="firstName" name="firstName" />
+      </div>
+      <div>
+        <label for="gender"> Enter your gender:</label>
+      </div>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="nonBinary">Non-binary</option>
+        <option value="ratherNotSpecify">Would rather not say</option>
+      </select>
+
+      <div>
+        <label for="description">Describe yourself in a short sentence:</label>
+      </div>
+      <textarea name="description" id="description" rows="7"></textarea>
+      <button type="button" onclick="alert('Form Submitted')">Submit</button>
+    </form>
+  </body>
+</html>
